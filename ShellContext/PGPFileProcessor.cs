@@ -13,7 +13,7 @@ namespace ShellContext
     [Guid("98FF0E56-86BF-4403-B8BC-4FAF8643BAD3"), ComVisible(true)]
     public class PGPFileProcessor : IShellExtInit, IContextMenu
     {
-        // The name of the selected file.
+        // The name of the selected file.//**//
         private string selectedFile;
 
         private string menuSignEncryptText = "&Подписать и закрыть информацию";
