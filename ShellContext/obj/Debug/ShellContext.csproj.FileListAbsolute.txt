@@ -1,0 +1,8 @@
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\obj\Debug\ShellContext.dll
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\obj\Debug\ShellContext.Properties.Resources.resources
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\obj\Debug\ShellContext.pdb
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\bin\Debug\ShellContext.dll
+C:\Users\Symfony\Desktop\solutions\ShellContext\ShellContext\bin\Debug\ShellContext.pdb
