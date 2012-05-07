@@ -1,0 +1,8 @@
+E:\repo\ContextShell\ShellContext\bin\Debug\ShellContext.dll
+E:\repo\ContextShell\ShellContext\bin\Debug\ShellContext.pdb
+E:\repo\ContextShell\ShellContext\obj\Debug\ResolveAssemblyReference.cache
+E:\repo\ContextShell\ShellContext\obj\Debug\ShellContext.Properties.Resources.resources
+E:\repo\ContextShell\ShellContext\obj\Debug\GenerateResource.read.1.tlog
+E:\repo\ContextShell\ShellContext\obj\Debug\GenerateResource.write.1.tlog
+E:\repo\ContextShell\ShellContext\obj\Debug\ShellContext.dll
+E:\repo\ContextShell\ShellContext\obj\Debug\ShellContext.pdb

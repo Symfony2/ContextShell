@@ -6,7 +6,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using Microsoft.Win32;
 
-namespace ShellContext
+namespace ShellContextMenu
 {
     #region Shell Interfaces
 
