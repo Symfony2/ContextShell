@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using HostSign;
+
 using ShellContext.Properties;
 
 namespace ShellContextMenu
@@ -46,6 +48,9 @@ namespace ShellContextMenu
             System.Windows.Forms.MessageBox.Show(
                         "The selected file is \r\n\r\n" + this.selectedFile,
                         "CSShellExtContextMenuHandler");
+            System.Windows.Forms.MessageBox.Show("WORK!!!");
+            /*MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();*/
         }
 
 

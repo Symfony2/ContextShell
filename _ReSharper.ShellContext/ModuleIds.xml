@@ -1,3 +1,5 @@
 <Modules>
   <Module PersistentId="33095749-E4E7-4003-B571-B2A99CA11D30" ModuleId="ShellContext" />
+  <Module PersistentId="F8A7CE00-A0B2-4C99-9315-69C41DD156C4" ModuleId="HostSign" />
+  <Module PersistentId="887B7E8D-0212-4E91-8725-FEBDD83AE6D1" ModuleId="Bashkarma" />
 </Modules>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using HostSign;
 using ShellContext.Properties;
 
 
@@ -47,6 +48,8 @@ namespace ShellContextMenu
             System.Windows.Forms.MessageBox.Show(
                         "The selected file is identify \r\n\r\n" + this.selectedFile,
                         "CSShellExtContextMenuHandler");
+            /*DecryptDialog decDlg = new DecryptDialog();
+            decDlg.ShowDialog();*/
         }
 
 

@@ -1,0 +1,67 @@
+﻿<Window x:Class="Bashkarma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"         
+        xmlns:local ="clr-namespace:Bashkarma"
+        Title="MainWindow" Height="474" Width="681" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Loaded="Window_Loaded" MouseDown="Window_MouseDown">
+    <Window.Background>
+        <SolidColorBrush />
+    </Window.Background>
+    <Window.Resources>
+               
+        <!--<local:Members x:Key="RegisteredUsers"/>-->
+        <local:ImageConverter x:Key="ImageConverter"/>
+
+        
+        <DataTemplate x:Key="DataTemplateItemConverter">
+            <Canvas Width="236" Height="48">
+                <Image Source="{Binding Path= PictureID, Mode=TwoWay,Converter={StaticResource ImageConverter}}" Name="ImageName" Height="32" Width="32" Canvas.Left="8" Canvas.Top="8"></Image>
+                <TextBlock Text="{Binding Name}" Canvas.Left="56" Canvas.Top="8" Width="172"/>
+            </Canvas>
+        </DataTemplate>
+        <DataTemplate x:Key="DataTemplateItemDirect">
+            <Canvas Width="236" Height="48">
+                <Image Source="{Binding Path= PictureString, Mode=TwoWay}" Name="ImageName" Height="32" Width="32" Canvas.Left="8" Canvas.Top="8"/>
+                <TextBlock Text="{Binding Path= Name, Mode=TwoWay}" Canvas.Left="56" Canvas.Top="8" Width="172" FontSize="14" FontFamily="Arial" FontWeight="Bold" />
+            </Canvas>
+        </DataTemplate>
+        <DataTemplate x:Key="DataTemplateItemStyle">
+            <Canvas Width="236" Height="48">
+                <Image Name="ImageName" Height="32" Width="32" Canvas.Left="8" Canvas.Top="8"></Image>
+                <TextBlock Text="{Binding Name}" Canvas.Left="56" Canvas.Top="8" Width="172"/>
+            </Canvas>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding Path= PictureID, Mode=TwoWay}" Value="0">
+                    <Setter TargetName="ImageName" Property="Source" Value="Images\0.png"/>
+                    <!--<Setter TargetName="ImageName" Property="Source" Value="pack://siteoforigin:,,,/Images/0.png"/>-->
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path = PictureID, Mode=TwoWay}" Value="1">
+                    <Setter TargetName="ImageName" Property="Source" Value="Images\1.png"/>
+                    <!--<Setter TargetName="ImageName" Property="Source" Value="pack://siteoforigin:,,,/Images/1.png"/>-->
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+
+    </Window.Resources>
+    <Grid>
+        <Rectangle Height="384" HorizontalAlignment="Left" Margin="27,28,0,0" Name="rectangle1" Stroke="#FF1A7603" VerticalAlignment="Top" Width="606" RadiusX="10" RadiusY="10" Fill="#9D006A00">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="30" Color="DarkGreen" Direction="0" ShadowDepth="0"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        
+        <ListBox Height="297" HorizontalAlignment="Left" Margin="61,90,0,0" 
+                 Name="listBox1" VerticalAlignment="Top" Width="377"                 
+                 IsSynchronizedWithCurrentItem="True"
+                 ItemTemplate="{DynamicResource DataTemplateItemDirect}">
+            <ListBox.Background>
+                <ImageBrush ImageSource="/Bashkarma;component/Images/key1.png" Stretch="None" TileMode="None" AlignmentY="Bottom" AlignmentX="Right" Opacity="0.2" />
+            </ListBox.Background>
+        </ListBox>
+        <Button  Content="Подписать" Height="43" HorizontalAlignment="Left" Margin="470,90,0,0" Name="button1" VerticalAlignment="Top" Width="126" Click="button1_Click" IsEnabled="True">
+            
+        </Button>
+        <Label Content="Выберите адресатов:" Height="28" HorizontalAlignment="Left" Margin="61,56,0,0" Name="label1" VerticalAlignment="Top" Foreground="#FFF9F3F3" FontStretch="Expanded" FontWeight="Bold" />
+        <Button Content="Выход" Height="43" HorizontalAlignment="Left" Margin="470,147,0,0" Name="button2" VerticalAlignment="Top" Width="126" />
+    </Grid>
+</Window>
